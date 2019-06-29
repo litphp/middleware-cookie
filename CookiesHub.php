@@ -59,17 +59,17 @@ class CookiesHub extends AbstractMiddleware
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @param mixed $value
-     * @param $domain
-     * @param $path
-     * @param $expires
-     * @param $maxAge
-     * @param $httpOnly
-     * @param $secure
+     * @param ?string $domain
+     * @param ?string $path
+     * @param ?string $expires
+     * @param ?string $maxAge
+     * @param ?bool $httpOnly
+     * @param ?bool $secure
      */
     public function setResponseCookie(
-        $name,
+        string $name,
         $value,
         $domain = null,
         $path = null,
